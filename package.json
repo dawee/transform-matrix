@@ -1,6 +1,6 @@
 {
   "name": "transform-matrix",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ES6 Matrix for transform attribute manipulation",
   "main": "es5/lib/matrix.js",
   "scripts": {

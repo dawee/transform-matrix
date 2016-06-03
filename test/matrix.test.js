@@ -35,4 +35,18 @@ describe('Matrix', () => {
     });
   });
 
+  describe('clone', () => {
+    
+    it('should keep type', () => {
+      let matrix = new Matrix();
+
+      matrix.translate(100, 100);
+
+      assert.equal(
+        matrix.serialize(),
+        matrix.clone().serialize()
+      );
+    });
+  });
+
 });
