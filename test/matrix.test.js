@@ -25,4 +25,14 @@ describe('Matrix', () => {
     });
   });
 
+  describe('serialize', () => {
+    
+    it('should serialize the basic matrix', () => {
+      assert.equal(
+        'matrix(1,0,0,1,0,0)',
+        new Matrix().serialize()
+      );
+    });
+  });
+
 });
