@@ -22,6 +22,13 @@ describe('Matrix', () => {
           .deserialize('translate(10,100)')
           .toFlatObject()
       );
+
+      assert.deepEqual(
+        {a: 1, b: 0, c: 0, d: 1, e: 100, f: 0},
+        Matrix
+          .deserialize('translate(100, 0)')
+          .toFlatObject()
+      );
     });
   });
 
