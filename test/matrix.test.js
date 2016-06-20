@@ -1,6 +1,6 @@
-import chai from 'chai';
-import pick from '101/pick';
-import Matrix from '../lib/matrix';
+const chai = require('chai');
+const pick = require('101/pick');
+const Matrix = require('../lib/matrix');
 
 const assert = chai.assert;
 
