@@ -22,7 +22,8 @@
   "dependencies": {
     "101": "1.5.0",
     "svg-transform-parser": "0.0.1",
-    "transformation-matrix-js": "2.6.5",
+    "transformation-matrix-js": "2.6.5"
+  },
   "devDependencies": {
     "chai": "3.5.0",
     "mocha": "2.5.3"
