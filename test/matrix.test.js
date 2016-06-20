@@ -22,6 +22,13 @@ describe('Matrix', () => {
           .deserialize('translate(10,100)')
           .toFlatObject()
       );
+
+      assert.deepEqual(
+        {a: 1, b: 0, c: 0, d: 1, e: 100, f: 0},
+        Matrix
+          .deserialize('translate(100, 0)')
+          .toFlatObject()
+      );
     });
   });
 
@@ -31,6 +38,20 @@ describe('Matrix', () => {
       assert.equal(
         'matrix(1,0,0,1,0,0)',
         new Matrix().serialize()
+      );
+    });
+  });
+
+  describe('clone', () => {
+    
+    it('should keep type', () => {
+      let matrix = new Matrix();
+
+      matrix.translate(100, 100);
+
+      assert.equal(
+        matrix.serialize(),
+        matrix.clone().serialize()
       );
     });
   });
